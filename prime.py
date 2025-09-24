@@ -1,10 +1,12 @@
 
 
 n=int(input('ENTER A NUMBER:'))
-for i in range(2,n//2+1):
+c=0
+for i in range(1,n):
     if n%i==0:
-        print('not a prime')
-        break
+        c=c+1
 
-else:
+if c==1:
     print('prime number')
+else:
+    print('NOT A PRIME')
